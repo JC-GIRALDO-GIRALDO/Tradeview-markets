@@ -2,4 +2,8 @@
 
 <template><h2>TradeGATEHub</h2></template>
 
-<style scoped></style>
+<style scoped>
+h2 {
+    font-size: 15px;
+}
+</style>

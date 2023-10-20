@@ -3,7 +3,7 @@ import HeaderTemplete from "./layout/header/HeaderTemplete.vue";
 </script>
 
 <template>
-  <div class="container-fluid">
+  <div class="container-fluid"> <!-- Utiliza container-fluid en lugar de container -->
     <header class="text-center">
       <HeaderTemplete />
     </header>
@@ -20,12 +20,20 @@ import HeaderTemplete from "./layout/header/HeaderTemplete.vue";
 
 <style scoped>
 /* Estilos personalizados */
-.container {
-  width: 1600px;
+.container-fluid {
+  width: 100%; /* Ancho completo para pantallas pequeñas */
   margin: 0 auto;
 }
+
 .main-content {
   background-color: #f5f5f5;
   padding: 20px;
+}
+
+/* Ajusta el padding para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 10px;
+  }
 }
 </style>
