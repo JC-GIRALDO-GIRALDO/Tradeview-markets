@@ -38,7 +38,7 @@ import Language from "../../views/Language.vue";
 
 <style scoped>
 .header-container {
-  background-color: #333; /* Color de fondo de tu header */
+  background-color: #181f29; /* Color de fondo de tu header */
   color: #fff; /* Color de texto de tu header */
   padding: 10px 0; /* Espaciado interior */
 }

@@ -1,17 +1,18 @@
 <script setup>
 import HeaderTemplete from "./layout/header/HeaderTemplete.vue";
+import MainTemplete from "./layout/main-contenido/MainTemplete.vue";
 </script>
 
 <template>
-  <div class="container-fluid"> <!-- Utiliza container-fluid en lugar de container -->
+  <div class="container-fluid">
     <header class="text-center">
       <HeaderTemplete />
     </header>
 
     <main class="row justify-content-center">
-      <div class="col-md-6">
+      <div class="col">
         <div class="main-content">
-          <!-- Contenido principal de tu aplicación -->
+          <MainTemplete />
         </div>
       </div>
     </main>
@@ -27,9 +28,11 @@ import HeaderTemplete from "./layout/header/HeaderTemplete.vue";
 
 .main-content {
   background-color: #f5f5f5;
-  padding: 20px;
+  width: 100%;
 }
-
+.col {
+  width: 100%;
+}
 /* Ajusta el padding para pantallas más pequeñas */
 @media (max-width: 768px) {
   .main-content {
@@ -37,3 +40,4 @@ import HeaderTemplete from "./layout/header/HeaderTemplete.vue";
   }
 }
 </style>
+
