@@ -2,10 +2,10 @@
 import Forex from "../../components/Forex.vue";
 import Futures from "../../components/Futures.vue";
 import Stocks from "../../components/Stocks.vue";
-import Tradegatehub from "../../components/Tradegatehub.vue";
 import Login from "../../views/Login.vue";
 import Contacto from "../../views/Contacto.vue";
 import Language from "../../views/Language.vue";
+import Tradegatehub from "../../components/Tradegatehub.vue";
 </script>
 
 <template>
@@ -14,7 +14,11 @@ import Language from "../../views/Language.vue";
       <div class="row align-items-center">
         <!-- Primera sección - Imagen -->
         <div class="col-lg-4 col-md-6 col-sm-12">
-          <img src="../../../public/tvm-logo-black.png" alt="logo-tvm" class="logo img-fluid">
+          <img
+            src="../../../public/tvm-logo-black.png"
+            alt="logo-tvm"
+            class="logo img-fluid"
+          />
         </div>
         <!-- Segunda sección - Lista con clase personalizada -->
         <div class="col-lg-4 col-md-6 col-sm-12">
@@ -26,7 +30,9 @@ import Language from "../../views/Language.vue";
           </ul>
         </div>
         <!-- Tercera sección - H2 con display: flex -->
-        <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-end section">
+        <div
+          class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-end section"
+        >
           <h2><Login /></h2>
           <h2><Contacto /></h2>
           <h2><Language /></h2>
@@ -38,7 +44,6 @@ import Language from "../../views/Language.vue";
 
 <style scoped>
 .header-container {
-  background-color: #181f29; /* Color de fondo de tu header */
   color: #fff; /* Color de texto de tu header */
   padding: 10px 0; /* Espaciado interior */
 }

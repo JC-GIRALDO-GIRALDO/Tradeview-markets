@@ -5,7 +5,7 @@
       <div class="col-md-6">
         <section class="section-1">
           <article>
-            <img src="../../../public/logo.png" alt="logo">
+            <img src="../../../public/logo.png" alt="logo" />
           </article>
         </section>
       </div>
@@ -13,12 +13,15 @@
         <section class="section-2">
           <article>
             <div class="logo-container">
-              <img src="../../../public/logo.png" alt="fondo" class="img-fluid logo-image">
+              <img
+                src="../../../public/logo.png"
+                alt="fondo"
+                class="img-fluid logo-image"
+              />
               <div class="text-container">
                 <h2>COMMUNI</h2>
                 <h2>TRADERS</h2>
               </div>
-              
             </div>
             <div class="additional-text">
               <h2 class="small-text">By</h2>
