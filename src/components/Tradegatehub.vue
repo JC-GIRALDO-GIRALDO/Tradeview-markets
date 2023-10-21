@@ -4,6 +4,6 @@
 
 <style scoped>
 h2 {
-    font-size: 15px;
+  font-size: 15px;
 }
 </style>
