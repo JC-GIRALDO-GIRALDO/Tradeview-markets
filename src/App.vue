@@ -1,4 +1,5 @@
 <script setup>
+import FooterTemplete from "./layout/footer/FooterTemplete.vue";
 import HeaderTemplete from "./layout/header/HeaderTemplete.vue";
 import MainTemplete from "./layout/main-contenido/MainTemplete.vue";
 import Navbar from "./layout/navbar/Navbar.vue";
@@ -15,7 +16,9 @@ import Navbar from "./layout/navbar/Navbar.vue";
     <main class="content-main-primary">
       <MainTemplete />
     </main>
-    <footer></footer>
+    <footer>
+      <FooterTemplete />
+    </footer>
   </div>
 </template>
 
