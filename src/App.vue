@@ -5,7 +5,7 @@ import Navbar from "./layout/navbar/Navbar.vue";
 </script>
 
 <template>
-  <div class="container-fluid">
+  <div class="main-container">
     <header class="text-center">
       <HeaderTemplete />
       <nav>
@@ -21,7 +21,7 @@ import Navbar from "./layout/navbar/Navbar.vue";
 
 <style scoped>
 /* Estilos personalizados */
-.container-fluid {
+.main-container {
   width: 100%;
   margin: 0 auto;
   position: fixed;
@@ -33,8 +33,8 @@ import Navbar from "./layout/navbar/Navbar.vue";
 
 .content-main-primary {
   width: 100%;
-  background-color: #181f29;
   margin-top: 100px; /* Ajusta el margen superior para separar el contenido del encabezado */
+  height: auto;
 }
 
 .text-center {

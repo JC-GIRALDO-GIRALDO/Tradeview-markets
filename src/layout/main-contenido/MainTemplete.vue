@@ -1,35 +1,51 @@
 <script setup></script>
+
 <template>
   <div class="container-a">
     <section class="section-1">
-      <article>
-        <img src="../../../public/logo.png" alt="logo" />
+      <article class="Contents-Part-One">
+        <img
+          src="https://i.imgur.com/gOY5o9N.png"
+          alt="logo"
+          class="logo-section-1"
+        />
       </article>
     </section>
     <section class="section-2">
-      <article>
-        <div class="logo-container">
-          <img src="../../../public/logo.png" alt="fondo" class="logo-image" />
-          <div class="text-container">
-            <h2>COMMUNI</h2>
-            <h2>TRADERS</h2>
+      <article class="container-section-2">
+        <div class="centered-content">
+          <div class="logo-container">
+            <img
+              src="https://i.imgur.com/gOY5o9N.png"
+              alt="fondo"
+              class="logo-image"
+            />
+            <div class="text-container">
+              <h2>COMMUNI</h2>
+              <h2>TRADERS</h2>
+            </div>
           </div>
-        </div>
-        <div class="additional-text">
-          <h2 class="small-text">By</h2>
-          <h2 class="bottom-margin">TRADEVIEW</h2>
-        </div>
-
-        <div class="button-container">
-          <div class="button-group">
-            <p>Free Download for Tradeview Users</p>
-            <button>Contact your Broker</button>
+          <div class="Introduction">
+            <div class="additional-text">
+              <h2 class="small-text">By</h2>
+              <h2 class="bottom-margin">TRADEVIEW</h2>
+            </div>
+            <p class="paragraph-text">
+              Tradeview's CommuniTraders software lets our partners provide
+              value-added copy trading to their clients.
+            </p>
           </div>
-          <div class="button-group">
-            <p>Don't have a Tradeview Account yet?</p>
-            <button>Get a Free Demo</button>
+          <div class="button-container">
+            <div class="button-group">
+              <p class="button-text">Free Download for Tradeview Users</p>
+              <button class="custom-button">Contact your Broker</button>
+            </div>
+            <div class="button-group">
+              <p class="button-text">Don't have a Tradeview Account yet?</p>
+              <button class="custom-button">Get a Free Demo</button>
+            </div>
+            <!-- Agrega más contenido aquí si es necesario -->
           </div>
-          <!-- Agrega más contenido aquí si es necesario -->
         </div>
       </article>
     </section>
@@ -37,13 +53,13 @@
 </template>
 
 <style scoped>
-/* Estilo original */
+/* Estilo modificado para centrar el contenido */
 .container-a {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  background-color: azure;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  color: #f1f1f2;
 }
 .row {
   width: 100%;
@@ -52,19 +68,28 @@
   font-size: 14px;
 }
 .section-1 {
-  width: 100%;
+  width: 40%;
+  height: 800px;
+  background-color: #dddddd;
 }
 .section-2 {
-  width: 100%;
+  width: 60%;
   background-color: #181f29;
-}
-.logo-container {
   display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente el contenido en la sección 2 */
+  align-items: center; /* Centra horizontalmente el contenido en la sección 2 */
+  height: 800px; /* Puedes ajustar la altura según tus necesidades */
+}
+.centered-content {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
-.segunda-parte {
-  background-color: aquamarine;
-  width: 50%;
+.logo-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 .logo-image {
   max-width: 200px;
@@ -74,31 +99,59 @@
   display: flex;
   flex-direction: column;
 }
-
-.additional-text {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin-top: 10px;
-}
-
-.bottom-margin {
+bottom-margin {
   margin-top: 5px;
 }
-
 .button-container {
   display: flex;
   align-items: center;
   margin-top: 20px;
 }
-
 .button-group {
   display: flex;
   flex-direction: column;
   padding: 20px;
 }
-
+.logo-section-1 {
+  margin: 0 auto;
+}
+.Contents-Part-One {
+  margin: 0 auto;
+}
+.additional-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+container-section-2 {
+  width: 100%;
+  margin: 3rem auto;
+}
 button {
-  margin-top: 10px; /* Ajusta el margen superior según tus necesidades */
+  margin-top: 10px;
+}
+.custom-button {
+  background-color: #ff0400;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #f00; /* Cambia el color de fondo al pasar el ratón sobre el botón */
+}
+.paragraph-text {
+  text-align: center;
+  font-size: 18px; /* Tamaño de fuente personalizado */
+  max-width: 80%; /* Ancho máximo para un mejor diseño */
+  margin: 0 auto; /* Centra el párrafo horizontalmente */
+}
+.button-text {
+  margin: 0;
+  font-size: 14px;
 }
 </style>

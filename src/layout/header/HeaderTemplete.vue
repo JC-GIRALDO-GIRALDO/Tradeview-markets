@@ -14,7 +14,11 @@ import Tradegatehub from "../../components/Tradegatehub.vue";
       <!-- Primera sección - Imagen -->
       <section class="container-logo col-lg-3 col-md-3 col-sm-6">
         <article class="content-logo">
-          <img src="../../../public//logo.png" alt="logo-tvm" class="logo" />
+          <img
+            src="https://i.imgur.com/gOY5o9N.png"
+            alt="logo-tvm"
+            class="logo"
+          />
         </article>
         <article class="content-name">
           <div>
@@ -52,7 +56,7 @@ import Tradegatehub from "../../components/Tradegatehub.vue";
 <style scoped>
 .header-container {
   width: 100%;
-  color: #fff;
+  color: #f1f1f2;
   padding: 10px 0;
 }
 
@@ -95,6 +99,7 @@ import Tradegatehub from "../../components/Tradegatehub.vue";
 .section h2 {
   margin-left: 10px;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .logo {
@@ -118,6 +123,7 @@ h2 {
 .nav li {
   margin-left: 20px;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 /* Ajustes para pantallas pequeñas */
