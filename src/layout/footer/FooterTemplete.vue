@@ -8,7 +8,7 @@ import TechnologyServices from './TechnologyServices.vue';
 <template>
     <div class="footer">
        <section>
-            <ServiceComponents />       
+            <ServiceComponents />      
         </section>
         <section>
             <TechnologyServices />
