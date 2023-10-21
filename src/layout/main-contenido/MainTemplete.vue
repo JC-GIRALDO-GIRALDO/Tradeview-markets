@@ -176,4 +176,21 @@ button {
 .text-container h2 {
   margin-top: 10px;
 }
+@media (max-width: 768px) {
+  .container-a {
+    flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+  }
+
+  .section-1 {
+    width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+    height: auto; /* Ajusta la altura automáticamente según el contenido */
+    margin-top: 60px; /* Agrega margen superior para dejar espacio para el menú fijo */
+  }
+
+  .section-2 {
+    width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+    height: auto; /* Ajusta la altura automáticamente según el contenido */
+    margin-top: 0; /* Restablece el margen superior a 0 en pantallas pequeñas */
+  }
+}
 </style>

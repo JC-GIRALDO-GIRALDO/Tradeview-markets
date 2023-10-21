@@ -128,17 +128,52 @@ h2 {
 
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
-  .col-lg-3 {
-    flex: 1;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .col-md-6,
   .col-sm-6 {
     flex: 1;
+  }
+}
+/* Añade estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .header-container {
+    margin: 0 auto;
+    flex-direction: column; /* Cambia la dirección del contenedor principal a columna */
+    align-items: center; /* Centra los elementos en la columna */
+  }
+
+  .container-logo,
+  .container-rutas,
+  .section {
+    margin: 0 auto;
+    width: 100%; /* Haz que estos elementos ocupen el 100% del ancho */
     text-align: center;
-    margin-bottom: 20px;
+  }
+
+  .navigation-menu {
+    color: #ff0400;
+    display: flex;
+    flex-direction: column; /* Coloca los elementos de la lista en una columna */
+  }
+
+  .nav li {
+    margin: 5px 0; /* Aumenta el espacio entre los elementos de la lista */
+  }
+}
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .content-logo img {
+    width: auto;
+  }
+
+  .section {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .section h2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 </style>

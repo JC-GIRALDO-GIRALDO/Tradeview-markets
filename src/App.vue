@@ -24,7 +24,6 @@ import Navbar from "./layout/navbar/Navbar.vue";
 .main-container {
   width: 100%;
   margin: 0 auto;
-  position: fixed;
   top: 0;
   left: 0;
   right: 0;

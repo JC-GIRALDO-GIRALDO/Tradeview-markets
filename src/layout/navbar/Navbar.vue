@@ -1,6 +1,8 @@
 <template>
   <nav class="navbar">
-    <ul class="navbar-list">
+    <!-- Botón de menú para pantallas pequeñas -->
+    <button class="menu-button" @click="toggleMenu">☰</button>
+    <ul class="navbar-list" :class="{ open: isMenuOpen }">
       <li class="navbar-item"><a href="#">Markets</a></li>
       <li class="navbar-item"><a href="#">Company</a></li>
       <li class="navbar-item"><a href="#">Accounts</a></li>
@@ -16,48 +18,54 @@
 <script setup>
 import { ref } from "vue";
 
-const navbar = ref(null);
+const isMenuOpen = ref(false);
 
-// Agregar lógica adicional aquí si es necesario
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value;
+};
 </script>
 
 <style scoped>
-/* En tu estilo CSS para el menú */
-.navbar {
-  color: #fff;
-  padding: 10px 0;
-  text-align: center; /* Centra el texto horizontalmente */
+/* Estilo para el botón de menú en pantallas pequeñas */
+.menu-button {
+  font-size: 20px;
+  cursor: pointer;
+  display: none; /* Ocultar el botón por defecto */
+  color: #f1f1f2;
+  text-decoration: none;
 }
-
 .navbar-list {
   list-style: none;
-  display: flex;
-  justify-content: center; /* Centra los elementos del menú horizontalmente */
-  margin: 0;
-  padding: 0;
-}
-
-.navbar-item {
-  margin: 0 20px; /* Aumenta el espacio entre los elementos del menú */
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-.navbar-item a {
+  color: #f1f1f2;
   text-decoration: none;
-  color: #fff;
+}
+.navbar-item a {
+  color: #f1f1f2;
+  text-decoration: none;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
-  .navbar-list {
-    flex-direction: column; /* Cambia a una disposición de columna en pantallas pequeñas */
-    align-items: center; /* Centra los elementos verticalmente */
+  .menu-button {
+    display: block; /* Mostrar el botón en pantallas pequeñas */
   }
 
-  .navbar-item {
-    margin: 10px 0; /* Espaciado entre los elementos del menú en pantallas pequeñas */
+  /* Ocultar el menú por defecto en pantallas pequeñas */
+  .navbar-list {
+    display: none;
+  }
+
+  /* Mostrar el menú cuando isMenuOpen es verdadero en pantallas pequeñas */
+  .navbar-list.open {
+    display: block;
   }
 }
 
-/* Agregar estilos adicionales según tus necesidades */
+/* Estilo CSS para el menú en pantallas más grandes */
+@media (min-width: 769px) {
+  .navbar-list {
+    display: flex;
+  }
+}
 </style>
