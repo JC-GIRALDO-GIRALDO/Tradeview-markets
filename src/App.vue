@@ -12,12 +12,8 @@ import Navbar from "./layout/navbar/Navbar.vue";
         <Navbar />
       </nav>
     </header>
-    <main class="row justify-content-center">
-      <div class="col">
-        <div class="main-content">
-          <MainTemplete />
-        </div>
-      </div>
+    <main class="content-main-primary">
+      <MainTemplete />
     </main>
     <footer></footer>
   </div>
@@ -26,26 +22,31 @@ import Navbar from "./layout/navbar/Navbar.vue";
 <style scoped>
 /* Estilos personalizados */
 .container-fluid {
-  width: 100%; /* Ancho completo para pantallas pequeñas */
+  width: 100%;
   margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1; /* Agrega una capa superior para mantener el encabezado visible */
 }
+
+.content-main-primary {
+  width: 100%;
+  background-color: #181f29;
+  margin-top: 100px; /* Ajusta el margen superior para separar el contenido del encabezado */
+}
+
 .text-center {
-  background: linear-gradient(#181f29, #181f29, #f1f1f2);
+  background: linear-gradient(#181f29, #181f29, #181f29, #f1f1f200);
   color: #fff;
   padding: 10px 0;
-}
-.main-content {
-  background-color: #f5f5f5;
-  width: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2; /* Asegura que el encabezado esté por encima del contenido */
 }
-.col {
-  width: 100%;
-}
-/* Ajusta el padding para pantallas más pequeñas */
-@media (max-width: 768px) {
-  .main-content {
-    padding: 10px;
-  }
-}
+
+/* ... otros estilos ... */
 </style>
