@@ -154,4 +154,26 @@ button {
   margin: 0;
   font-size: 14px;
 }
+.logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+}
+
+.logo-image {
+  max-width: 200px;
+  margin-right: 10px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente el contenido */
+}
+
+/* Opcional: Añade margen superior para separar el texto del logo */
+.text-container h2 {
+  margin-top: 10px;
+}
 </style>
