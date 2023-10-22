@@ -385,11 +385,10 @@ const infoBrandsDos = [
   .custom-article {
     padding: 2rem;
   }
-  .contenedor-1 {
-    width: 100%;
-  }
+  .contenedor-1,
   .contenedor-2 {
     width: 100%;
+    padding: 30px;
   }
   .coment-surf {
     display: flex;
