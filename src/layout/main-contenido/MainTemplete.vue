@@ -44,7 +44,6 @@
               <p class="button-text">Don't have a Tradeview Account yet?</p>
               <button class="custom-button">Get a Free Demo</button>
             </div>
-            <!-- Agrega más contenido aquí si es necesario -->
           </div>
         </div>
       </article>
@@ -79,7 +78,7 @@
   flex-direction: column;
   justify-content: center; /* Centra verticalmente el contenido en la sección 2 */
   align-items: center; /* Centra horizontalmente el contenido en la sección 2 */
-  height: 800px; /* Puedes ajustar la altura según tus necesidades */
+  height: 800px;
 }
 .centered-content {
   display: flex;
@@ -172,7 +171,6 @@ button {
   align-items: center; /* Centra horizontalmente el contenido */
 }
 
-/* Opcional: Añade margen superior para separar el texto del logo */
 .text-container h2 {
   margin-top: 10px;
 }
