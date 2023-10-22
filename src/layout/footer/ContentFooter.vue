@@ -3,27 +3,27 @@ const socialMediaLogos = [
   {
     name: "Twiter",
     link: "https://twitter.com/Tradeview_",
-    //logo: require("../../assets/social-media-logos/twiter.png"),
+    //logo: twiter.png"),
   },
   {
     name: "Facebook",
     link: "https://www.facebook.com/TradeviewMarkets/",
-    //logo: require("../../assets/social-media-logos/facebook.png"),
+    //logo: facebook.png"),
   },
   {
     name: "Linkedin",
     link: "https://www.linkedin.com/company/tradeview-forex/",
-    //logo: require("../../assets/social-media-logos/linkedin.png"),
+    //logo: linkedin.png"),
   },
   {
     name: "Instagram",
     link: "https://www.instagram.com/tradeviewmarkets/",
-    //logo: require("../../assets/social-media-logos/instagram.png"),
+    //logo: instagram.png"),
   },
   {
     name: "YouTube",
     link: "https://www.youtube.com/@TradeviewMarkets",
-    //logo: require("../../assets/social-media-logos/youtube.png"),
+    //logo: youtube.png"),
   },
 ];
 const infoBrands = [
@@ -328,5 +328,55 @@ const infoBrandsDos = [
   padding: 10px; /* Agregar espacio (padding) a las tarjetas */
   background-color: transparent; /* Fondo transparente */
   color: #a2a4aa; /* Aplicar el color a todo el texto en las tarjetas */
+}
+@media (max-width: 768px) {
+.custom-section-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.custom-section-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.custom-section-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.custom-article-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.custom-article {
+  padding: 2rem;
+}
+.contenedor-1 {
+  width: 100%;
+}
+.contenedor-2 {
+  width: 100%;
+}
+.coment-surf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.item-4 {
+  display: flex;
+  flex-direction: column;
+}
 }
 </style>

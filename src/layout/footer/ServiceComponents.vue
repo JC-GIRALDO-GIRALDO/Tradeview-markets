@@ -85,4 +85,17 @@ const Service = [
 .red-text {
   color: red;
 }
+@media (max-width: 768px) {
+  .container {
+  width: 100%;
+}
+.row {
+  width: 100%;
+}
+/* Aplicar sombreado o difuminado en lugar de borde */
+.card {
+ width: 100%;
+}
+
+}
 </style>
