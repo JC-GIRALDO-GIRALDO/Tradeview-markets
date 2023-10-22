@@ -1,9 +1,10 @@
 <script setup>
-//import plantImage from "./plant.png";
-//import candadoImage from "./candado.png";
-//import magicImage from "./magic.png";
-//import tocImage from "./toc.png";
-//import awardImage from "./award.png";
+// Importa tus imágenes aquí si es necesario
+// import plantImage from "./plant.png";
+// import candadoImage from "./candado.png";
+// import magicImage from "./magic.png";
+// import tocImage from "./toc.png";
+// import awardImage from "./award.png";
 
 const Service = [
   {
@@ -21,13 +22,13 @@ const Service = [
   {
     title: "Simple Interface",
     description:
-      "A simple GUI provides needed features and tools but isn’t bogged down by non-core features. This allows clients to get setup quickly and start trading.",
+      "A simple GUI provides needed features and tools but isn’t bogged down by non-core features. This allows clients to get set up quickly and start trading.",
     image: "imagen",
   },
   {
     title: "No Long-Term Commitments",
     description:
-      "Clients can easily signup to start, change signal providers, or stop the service. There is no long-term lockup.",
+      "Clients can easily sign up to start, change signal providers, or stop the service. There is no long-term lockup.",
     image: "imagen",
   },
   {
@@ -56,7 +57,7 @@ const Service = [
         <div class="card">
           <img :src="service.image" class="card-img-top" alt="Service Image" />
           <div class="card-body">
-            <h5 class="card-title">{{ service.title }}</h5>
+            <h5 class="card-title red-text">{{ service.title }}</h5>
             <p class="card-text">{{ service.description }}</p>
           </div>
         </div>
@@ -68,5 +69,20 @@ const Service = [
 <style scoped>
 .container {
   color: #ffffff;
+}
+.row {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+/* Aplicar sombreado o difuminado en lugar de borde */
+.card {
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 5px 5px 15px 10px #f8f8f8;
+}
+
+/* Cambiar el color del título a rojo */
+.red-text {
+  color: red;
 }
 </style>

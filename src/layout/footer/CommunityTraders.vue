@@ -1,22 +1,24 @@
 <template>
   <div class="container-community">
     <div class="container-section-community">
-      <section class="container text-center py-3 center-title">
+      <section class="container text-center py- center-title">
         <h3>Try CommuniTraders Now!</h3>
       </section>
-      <section class="container">
-        <div class="row">
+      <section class="container-button">
+        <div class="row-a">
           <div class="col-md-6 d-flex justify-content-center">
             <div class="text-center mx-auto">
               <!-- Agregamos mx-auto para centrar horizontalmente -->
-              <p>Free Download for Tradeview Users</p>
+              <p class="mb-2">Free Download for Tradeview Users</p>
+              <!-- Agregamos un margen inferior -->
               <button class="btn btn-danger">Contact your Broker</button>
             </div>
           </div>
           <div class="col-md-6 d-flex justify-content-center border-start">
             <div class="text-center mx-auto">
               <!-- Agregamos mx-auto para centrar horizontalmente -->
-              <p>Don't have a Tradeview Account yet?</p>
+              <p class="mb-2">Don't have a Tradeview Account yet?</p>
+              <!-- Agregamos un margen inferior -->
               <button class="btn btn-danger">Get a Free Demo</button>
             </div>
           </div>
@@ -27,6 +29,11 @@
 </template>
 
 <style scoped>
+.container-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .container-community {
   background-color: #181f29;
 }
@@ -37,12 +44,22 @@
   border-left: 1px solid #ffffff; /* Añade una línea vertical en el medio */
 }
 .center-title h3 {
+  font-weight: 750;
   margin-top: 3rem;
   margin-bottom: 1.5rem;
   color: #ffffff;
 }
+.text-center {
+  width: 100%;
+}
 .text-center p {
   color: #ffffff;
+  padding: 15px;
+}
+.row-a {
+  display: flex;
+  width: 45%;
+  justify-content: center;
 }
 .text-center button {
   margin-bottom: 3rem;

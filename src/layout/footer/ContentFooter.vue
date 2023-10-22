@@ -223,10 +223,10 @@ const infoBrandsDos = [
                   <strong>Headquarters:</strong> {{ brand.headquarters }}
                 </p>
                 <a
-                  :href="'http://' + brand.web"
+                  :href="'http://{{brand.web}}'"
                   target="_blank"
                   class="card-link"
-                  >Website</a
+                  >Website:<span class="web-brand">{{ brand.web }}</span></a
                 >
               </div>
             </div>
@@ -242,10 +242,10 @@ const infoBrandsDos = [
                   <strong>Headquarters:</strong> {{ brand.headquarters }}
                 </p>
                 <a
-                  :href="'http://' + brand.web"
+                  :href="'http://{{brand.web}}'"
                   target="_blank"
                   class="card-link"
-                  >Website</a
+                  >Website:<span class="web-brand">{{ brand.web }}</span></a
                 >
               </div>
             </div>
@@ -265,6 +265,12 @@ const infoBrandsDos = [
 }
 .content-text-footer {
   color: #a2a4aa;
+}
+.card-link {
+  color: #a2a4aa;
+}
+.web-brand {
+  color: #f8f8f8;
 }
 .custom-section-1 {
   display: flex;
@@ -295,6 +301,9 @@ const infoBrandsDos = [
 }
 .contenedor-2 {
   width: 80%;
+}
+.card-title {
+  color: #f8f8f8;
 }
 .coment-surf {
   display: flex;
