@@ -64,4 +64,23 @@
 .text-center button {
   margin-bottom: 3rem;
 }
+@media (max-width: 768px) {
+  .container-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container-section-community {
+  padding: 2rem;
+}
+.text-center {
+  width: 100%;
+}
+.row-a {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+}
 </style>

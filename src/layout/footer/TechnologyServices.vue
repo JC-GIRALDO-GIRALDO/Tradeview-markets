@@ -58,4 +58,25 @@
   color: black;
   font-size: 16px;
 }
+@media (max-width: 768px) {
+  .container-Technology {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.info-Technology img {
+  width: 100%;
+}
+.text-Technology {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-text {
+  width: 100%;
+}
+}
 </style>

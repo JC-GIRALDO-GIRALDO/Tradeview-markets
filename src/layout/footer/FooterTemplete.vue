@@ -7,16 +7,16 @@ import TechnologyServices from "./TechnologyServices.vue";
 
 <template>
   <div class="footer">
-    <section>
+    <section class="ServiceComponents">
       <ServiceComponents />
     </section>
-    <section>
+    <section class="TechnologyServices">
       <TechnologyServices />
     </section>
-    <section>
+    <section class="CommunityTraders">
       <CommunityTraders />
     </section>
-    <section>
+    <section class="ContentFooter">
       <ContentFooter />
     </section>
   </div>
@@ -27,5 +27,10 @@ import TechnologyServices from "./TechnologyServices.vue";
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 768px) {
+.ServiceComponents, .TechnologyServices, .CommunityTraders, .ContentFooter {
+  width: 100%;
+}
 }
 </style>
