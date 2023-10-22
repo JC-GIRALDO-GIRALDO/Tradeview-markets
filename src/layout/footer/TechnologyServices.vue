@@ -42,16 +42,20 @@
 }
 
 .info-text {
-  width: 60%;
+  width: 55%;
 }
 .info-text h3 {
   font-size: 30px;
   margin-bottom: 2rem;
 }
 .info-text p {
-  font-size: 20px;
+  font-size: 22px;
 }
 .info-text a {
+  text-decoration-color: black;
+}
+.info-text a p {
   color: black;
+  font-size: 16px;
 }
 </style>
