@@ -144,14 +144,14 @@ h2 {
   .container-rutas,
   .section {
     margin: 0 auto;
-    width: 100%; /* Haz que estos elementos ocupen el 100% del ancho */
+    width: 100%; /*  estos elementos ocupen el 100% del ancho */
     text-align: center;
   }
 
   .navigation-menu {
     color: #ff0400;
     display: flex;
-    flex-direction: column; /* Coloca los elementos de la lista en una columna */
+    flex-direction: column;
   }
 
   .nav li {
