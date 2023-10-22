@@ -102,8 +102,69 @@ const infoBrandsDos = [
   <div class="content-footer">
     <div class="content-text-footer">
       <section class="custom-section-1">
-        <article class="custom-article"></article>
-        <article class="custom-article"></article>
+        <article class="custom-article-1">
+          <div class="contenedor-1">
+            <div class="item item-1">
+              <img src="../../../public/logo2.png" alt="logo-gris-empresa" />
+            </div>
+            <div class="item item-2">
+              <p>
+                <strong>Tradeview Markets</strong> | Grand Cayman, KY1-1002, 4th
+                Floor <br />
+                Harbour Place | 103 South Church St, PO Box 1105
+              </p>
+              <p><strong>Main Oﬃce: </strong>+1 345 945 6271</p>
+              <p><strong>Direct Phone: </strong>+1 345 946 4532</p>
+              <p>
+                <strong>Website: </strong>
+                <u>www.tvmarkets.com</u>
+              </p>
+            </div>
+            <div class="item item-3">
+              <div class="item item-3">
+                <p>FIND US ON:</p>
+                <ul>
+                  <li
+                    v-for="socialMedia in socialMediaLogos"
+                    :key="socialMedia.name"
+                  >
+                    <a :href="socialMedia.link" target="_blank">{{
+                      socialMedia.name
+                    }}</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="contenedor-2">
+            <div class="item item-4 border p-3 d-flex">
+              <div class="coment-surf">
+                <div class="content-img-surf">
+                  <img src="../../../public/surf-logo.png" alt="logo-surf" />
+                </div>
+                <div>
+                  <p>
+                    Find daily trading insights and understand what is behind
+                    the latest waves in financial markets.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex ms-3">
+                <input
+                  type="text"
+                  class="form-control bg-transparent me-2"
+                  placeholder="Enter your email address"
+                />
+                <button class="btn btn-primary btn-sm bg-transparent">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+
+            <div class="item item-5"></div>
+            <div class="item item-6"></div>
+          </div>
+        </article>
       </section>
       <section class="custom-section-2">
         <article class="custom-article">
@@ -199,9 +260,17 @@ const infoBrandsDos = [
 .content-footer {
   background-color: #3c3e48;
 }
-
+.custom-article-1 {
+  margin: 5rem auto;
+}
 .content-text-footer {
-  color: #f2f2f2;
+  color: #a2a4aa;
+}
+.custom-section-1 {
+  display: flex;
+  flex-direction: row;
+  width: 77%;
+  margin: 0 auto;
 }
 .custom-section-2 {
   display: flex;
@@ -216,17 +285,39 @@ const infoBrandsDos = [
   width: 80%;
   margin: 0 auto;
 }
+.custom-article-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contenedor-1 {
+  width: 80%;
+}
+.contenedor-2 {
+  width: 80%;
+}
+.coment-surf {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.content-img-surf img {
+  width: 200px;
+}
 .column {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 20px; /* Espacio entre los objetos en la columna */
 }
-
+.item-4 {
+  display: flex;
+  flex-direction: column;
+}
 .card {
   border: none; /* Eliminar bordes de las tarjetas */
   padding: 10px; /* Agregar espacio (padding) a las tarjetas */
   background-color: transparent; /* Fondo transparente */
-  color: #f2f2f2; /* Aplicar el color a todo el texto en las tarjetas */
+  color: #a2a4aa; /* Aplicar el color a todo el texto en las tarjetas */
 }
 </style>
