@@ -3,27 +3,27 @@ const socialMediaLogos = [
   {
     name: "Twiter",
     link: "https://twitter.com/Tradeview_",
-    //logo: twiter.png"),
+    logo: "https://i.imgur.com/Lzxt5fE.png",
   },
   {
     name: "Facebook",
     link: "https://www.facebook.com/TradeviewMarkets/",
-    //logo: facebook.png"),
+    logo: "https://i.imgur.com/JesPjPD.png",
   },
   {
     name: "Linkedin",
     link: "https://www.linkedin.com/company/tradeview-forex/",
-    //logo: linkedin.png"),
+    logo: "https://i.imgur.com/iKIQLVx.png",
   },
   {
     name: "Instagram",
     link: "https://www.instagram.com/tradeviewmarkets/",
-    //logo: instagram.png"),
+    logo: "https://i.imgur.com/WD02Eg3.png",
   },
   {
     name: "YouTube",
     link: "https://www.youtube.com/@TradeviewMarkets",
-    //logo: youtube.png"),
+    logo: "https://i.imgur.com/zPgIVqd.png",
   },
 ];
 const infoBrands = [
@@ -109,30 +109,31 @@ const infoBrandsDos = [
             </div>
             <div class="item item-2">
               <p>
-                <strong>Tradeview Markets</strong> | Grand Cayman, KY1-1002, 4th
-                Floor <br />
+                <strong class="item-strong">Tradeview Markets</strong> | Grand
+                Cayman, KY1-1002, 4th Floor <br />
                 Harbour Place | 103 South Church St, PO Box 1105
               </p>
-              <p><strong>Main Oﬃce: </strong>+1 345 945 6271</p>
-              <p><strong>Direct Phone: </strong>+1 345 946 4532</p>
               <p>
-                <strong>Website: </strong>
+                <strong class="item-strong">Main Oﬃce: </strong>+1 345 945 6271
+              </p>
+              <p>
+                <strong class="item-strong">Direct Phone: </strong>+1 345 946
+                4532
+              </p>
+              <p>
+                <strong class="item-strong">Website: </strong>
                 <u>www.tvmarkets.com</u>
               </p>
             </div>
             <div class="item item-3">
-              <div class="item item-3">
-                <p>FIND US ON:</p>
-                <ul>
-                  <li
-                    v-for="socialMedia in socialMediaLogos"
-                    :key="socialMedia.name"
-                  >
-                    <a :href="socialMedia.link" target="_blank">{{
-                      socialMedia.name
-                    }}</a>
-                  </li>
-                </ul>
+              <p>FIND US ON:</p>
+              <div class="socialMediaLogos">
+                <img
+                  v-for="socialMedia in socialMediaLogos"
+                  :key="socialMedia.logo"
+                  :src="socialMedia.logo"
+                  :alt="socialMedia.name"
+                />
               </div>
             </div>
           </div>
@@ -172,8 +173,8 @@ const infoBrandsDos = [
           <p>
             <strong
               >IMPORTANT NOTICE TO CLIENTS REGARDING CRYPTO CURRENCY
-              PROHIBITION.
-            </strong>
+              PROHIBITION.</strong
+            >
             Please be advised that Tradeview Markets does not accept
             cryptocurrency for deposit into client accounts. All deposits to
             client accounts must be made in fiat currency, such as USD, JPY,
@@ -206,8 +207,10 @@ const infoBrandsDos = [
           </p>
           <p>
             <br />
-            Terms and Conditions | Privacy Policy | AML Policy | Withdrawal
-            Policy | Refund Policy | Risk Disclosure | FAQ
+            <strong class="policy">
+              Terms and Conditions | Privacy Policy | AML Policy | Withdrawal
+              Policy | Refund Policy | Risk Disclosure | FAQ
+            </strong>
           </p>
           <hr />
         </article>
@@ -269,6 +272,10 @@ const infoBrandsDos = [
 .card-link {
   color: #a2a4aa;
 }
+.policy,
+.item-strong {
+  color: #f8f8f8;
+}
 .web-brand {
   color: #f8f8f8;
 }
@@ -284,6 +291,10 @@ const infoBrandsDos = [
   width: 77%;
   margin: 0 auto;
 }
+.socialMediaLogos img {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 .custom-section-3 {
   display: flex;
   flex-direction: row;
@@ -296,11 +307,17 @@ const infoBrandsDos = [
   flex-direction: row;
   justify-content: space-between;
 }
-.contenedor-1 {
-  width: 80%;
-}
+.contenedor-1,
 .contenedor-2 {
   width: 80%;
+  margin-top: 2rem;
+}
+.item-1 img {
+  margin-bottom: 2rem;
+}
+.item-3 p {
+  margin-top: 3rem;
+  font-size: 12px;
 }
 .card-title {
   color: #f8f8f8;
@@ -328,55 +345,63 @@ const infoBrandsDos = [
   padding: 10px; /* Agregar espacio (padding) a las tarjetas */
   background-color: transparent; /* Fondo transparente */
   color: #a2a4aa; /* Aplicar el color a todo el texto en las tarjetas */
+  line-height: 1;
+}
+.card-body p {
+  margin: 0;
+  padding: 0;
+}
+.card-body h5 {
+  margin: 0;
+  padding: 0;
 }
 @media (max-width: 768px) {
-.custom-section-1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  margin: 0 auto;
-}
-.custom-section-2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  margin: 0 auto;
-}
-.custom-section-3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  margin: 0 auto;
-}
-.custom-article-1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.custom-article {
-  padding: 2rem;
-}
-.contenedor-1 {
-  width: 100%;
-}
-.contenedor-2 {
-  width: 100%;
-}
-.coment-surf {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.column {
-  display: flex;
-  flex-direction: column;
-}
-.item-4 {
-  display: flex;
-  flex-direction: column;
-}
+  .custom-section-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .custom-section-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .custom-section-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .custom-article-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .custom-article {
+    padding: 2rem;
+  }
+  .contenedor-1,
+  .contenedor-2 {
+    width: 100%;
+    padding: 30px;
+  }
+  .coment-surf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+  .item-4 {
+    display: flex;
+    flex-direction: column;
+  }
 }
 </style>
