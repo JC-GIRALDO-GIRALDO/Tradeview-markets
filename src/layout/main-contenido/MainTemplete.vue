@@ -69,7 +69,7 @@
 }
 .section-1 {
   width: 40%;
-  height: 800px;
+  height: auto;
   background-color: #dddddd;
 }
 .section-2 {
