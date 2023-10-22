@@ -143,14 +143,14 @@ const infoBrandsDos = [
                 <div class="content-img-surf">
                   <img src="../../../public/surf-logo.png" alt="logo-surf" />
                 </div>
-                <div>
+                <div class="coment-surf-text">
                   <p>
                     Find daily trading insights and understand what is behind
                     the latest waves in financial markets.
                   </p>
                 </div>
               </div>
-              <div class="d-flex ms-3">
+              <div class="d-flex ms-3 surf-input">
                 <input
                   type="text"
                   class="form-control bg-transparent me-2"
@@ -161,9 +161,57 @@ const infoBrandsDos = [
                 </button>
               </div>
             </div>
-
-            <div class="item item-5"></div>
-            <div class="item item-6"></div>
+            <div class="item item-5">
+              <div class="link-seccion-item">
+                <ul>
+                  <li><a href="#">Forex</a></li>
+                  <li><a href="#">Stocks</a></li>
+                  <li><a href="#">Futures</a></li>
+                  <li><a href="#">TradeGATEHUB</a></li>
+                  <li><a href="#">Markets</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Introducing Brokers</a></li>
+                  <li><a href="#">Education</a></li>
+                  <li><a href="#">Contact US</a></li>
+                </ul>
+              </div>
+              <div class="link-seccion-item-all">
+                <ul>
+                  ACCOUNTS
+                  <li><a href="#">Open account</a></li>
+                  <li><a href="#">Individual</a></li>
+                  <li><a href="#">Joint</a></li>
+                  <li><a href="#">Corporate</a></li>
+                </ul>
+                <ul>
+                  ABOUT TRADEVIEW
+                  <li><a href="#">Our Story</a></li>
+                  <li><a href="#">Our Team</a></li>
+                  <li><a href="#">Our Vision</a></li>
+                </ul>
+                <ul>
+                  COMPANY
+                  <li><a href="#">Why Tradeview</a></li>
+                  <li><a href="#">Sponsorships</a></li>
+                  <li><a href="#">Press</a></li>
+                </ul>
+              </div>
+              <div class="link-seccion-item-all">
+                <ul>
+                  SOFTWARE
+                  <li><a href="#">MetaTrader 4</a></li>
+                  <li><a href="#">MetaTrader 5</a></li>
+                  <li><a href="#">cTrader</a></li>
+                  <li><a href="#">cTrader Copy</a></li>
+                  <li><a href="#">Currenex</a></li>
+                </ul>
+                <ul>
+                  SUPPORT
+                  <li><a href="#">Forms and Documents</a></li>
+                  <li><a href="#">FAQ</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </article>
       </section>
@@ -264,7 +312,7 @@ const infoBrandsDos = [
   background-color: #3c3e48;
 }
 .custom-article-1 {
-  margin: 5rem auto;
+  margin: 1rem auto;
 }
 .content-text-footer {
   color: #a2a4aa;
@@ -326,9 +374,18 @@ const infoBrandsDos = [
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding: 15px;
 }
 .content-img-surf img {
-  width: 200px;
+  width: 150px;
+}
+.coment-surf-text p {
+  margin-left: 50px;
+  font-size: 15px;
+}
+.surf-input {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .column {
   flex: 1;
@@ -339,6 +396,31 @@ const infoBrandsDos = [
 .item-4 {
   display: flex;
   flex-direction: column;
+}
+.item-5 {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.link-seccion-item li {
+  margin-bottom: 0.5rem;
+  list-style: none;
+}
+.link-seccion-item a {
+  color: #a2a4aa;
+}
+.link-seccion-item-all ul {
+  color: #a2a4aa;
+  margin-bottom: 3rem;
+}
+.link-seccion-item-all li {
+  margin-bottom: 0.5rem;
+  list-style: none;
+}
+.link-seccion-item-all a {
+  color: #fbfbfb;
+  text-decoration: none;
 }
 .card {
   border: none; /* Eliminar bordes de las tarjetas */
