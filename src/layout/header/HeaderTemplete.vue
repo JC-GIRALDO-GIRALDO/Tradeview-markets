@@ -46,6 +46,7 @@ import Tradegatehub from "../../components/Tradegatehub.vue";
         class="col-lg-3 col-md-3 col-sm-12 d-flex justify-content-end section"
       >
         <h2><Login /></h2>
+        <div class="vertical-line"></div>
         <h2><Contacto /></h2>
         <h2><Language /></h2>
       </section>
@@ -125,7 +126,13 @@ h2 {
   margin-right: 20px;
   cursor: pointer;
 }
-
+.vertical-line {
+  width: 1px;
+  height: 20px;
+  background-color: #a2a4aa;
+  margin-left: 5px;
+  margin-right: 5px;
+}
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
   .col-sm-6 {
