@@ -88,6 +88,7 @@ const Service = [
   }
   .row {
     width: 100%;
+    margin-top: 35rem;
   }
   /* Aplicar sombreado o difuminado en lugar de borde */
   .card {

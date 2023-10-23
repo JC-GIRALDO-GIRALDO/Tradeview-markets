@@ -1,49 +1,43 @@
 <script setup></script>
 
 <template>
-  <div class="container-a">
-    <section class="section-1">
-      <article class="Contents-Part-One">
-        <img
-          src="https://i.imgur.com/gOY5o9N.png"
-          alt="logo"
-          class="logo-section-1"
-        />
-      </article>
+  <div class="container-main-intro">
+    <section class="section-img">
+      <img
+        src="https://i.imgur.com/U45qgw4.png"
+        alt="logo"
+        class="logo-section-1"
+      />
     </section>
-    <section class="section-2">
-      <article class="container-section-2">
+    <section class="section-text-intro">
+      <article class="section-article-intro">
+        <div class="logo-container">
+          <img
+            src="https://i.imgur.com/ha9yFmm.png"
+            alt="logo-communi"
+            class="logo-image"
+          />
+        </div>
+      </article>
+      <article class="section-article-text">
         <div class="centered-content">
-          <div class="logo-container">
-            <img
-              src="https://i.imgur.com/gOY5o9N.png"
-              alt="fondo"
-              class="logo-image"
-            />
-            <div class="text-container">
-              <h2>COMMUNI</h2>
-              <h2>TRADERS</h2>
-            </div>
+          <hr />
+          <p class="paragraph-text">
+            Tradeview's <strong>CommuniTraders</strong> software lets our
+            partners provide value-added copy trading to their clients.
+          </p>
+        </div>
+      </article>
+      <article class="section-article-button">
+        <div class="button-container">
+          <div class="button-group">
+            <p class="button-text">Free Download for Tradeview Users</p>
+            <button class="custom-button button-1">Contact your Broker</button>
           </div>
-          <div class="Introduction">
-            <div class="additional-text">
-              <h2 class="small-text">By</h2>
-              <h2 class="bottom-margin">TRADEVIEW</h2>
-            </div>
-            <p class="paragraph-text">
-              Tradeview's CommuniTraders software lets our partners provide
-              value-added copy trading to their clients.
-            </p>
-          </div>
-          <div class="button-container">
-            <div class="button-group">
-              <p class="button-text">Free Download for Tradeview Users</p>
-              <button class="custom-button">Contact your Broker</button>
-            </div>
-            <div class="button-group">
-              <p class="button-text">Don't have a Tradeview Account yet?</p>
-              <button class="custom-button">Get a Free Demo</button>
-            </div>
+          <div class="vertical-line"></div>
+          <div class="button-group">
+            <p class="button-text">Don't have a Tradeview Account yet?</p>
+            <button class="custom-button button-2">Get a Free Demo</button>
           </div>
         </div>
       </article>
@@ -53,53 +47,61 @@
 
 <style scoped>
 /* Estilo modificado para centrar el contenido */
-.container-a {
+.container-main-intro {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center; /* Centra horizontalmente el contenido */
-  color: #f1f1f2;
+  max-height: 900px;
+  background-color: #e3e3e3;
 }
-.row {
-  width: 100%;
-}
-.small-text {
-  font-size: 14px;
-}
-.section-1 {
+.section-img {
   width: 40%;
-  height: auto;
-  background-color: #dddddd;
 }
-.section-2 {
+.section-img img {
+  width: 100%;
+  height: 100%;
+}
+.section-text-intro {
   width: 60%;
   background-color: #181f29;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centra verticalmente el contenido en la sección 2 */
-  align-items: center; /* Centra horizontalmente el contenido en la sección 2 */
-  height: 800px;
+  justify-content: center;
+  align-items: center;
 }
 .centered-content {
+  width: 70%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.centered-content p {
+  max-width: 80%;
+  margin: 0 auto;
+  border-top: 2px solid #a2a4aa;
+  font-size: 33px;
+  text-align: center;
+  color: #a2a4aa;
+}
+.centered-content strong {
+  color: #ffffff;
+}
+.section-article-intro {
+  width: 100%;
+  margin: 2rem auto;
 }
 .logo-container {
   width: 100%;
-  display: flex;
-  align-items: center;
-}
-.logo-image {
-  max-width: 200px;
-  margin-right: 10px;
-}
-.segunda-parte .text-container {
+  height: auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
-bottom-margin {
-  margin-top: 5px;
+.logo-container img {
+  width: 30%;
+  margin: 0 auto;
 }
 .button-container {
   display: flex;
@@ -111,86 +113,83 @@ bottom-margin {
   flex-direction: column;
   padding: 20px;
 }
-.logo-section-1 {
-  margin: 0 auto;
-}
-.Contents-Part-One {
-  margin: 0 auto;
-}
-.additional-text {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-container-section-2 {
-  width: 100%;
-  margin: 3rem auto;
-}
 button {
-  margin-top: 10px;
+  margin-top: 25px;
 }
 .custom-button {
   background-color: #ff0400;
   color: #fff;
   padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.custom-button:hover {
-  background-color: #f00; /* Cambia el color de fondo al pasar el ratón sobre el botón */
-}
-.paragraph-text {
-  text-align: center;
-  font-size: 18px; /* Tamaño de fuente personalizado */
-  max-width: 80%; /* Ancho máximo para un mejor diseño */
-  margin: 0 auto; /* Centra el párrafo horizontalmente */
-}
 .button-text {
+  color: #a2a4aa;
   margin: 0;
-  font-size: 14px;
+  font-size: 15px;
 }
-.logo-container {
-  width: 100%;
-  display: flex;
-  justify-content: center; /* Centra horizontalmente el contenido */
-  align-items: center; /* Centra verticalmente el contenido */
+.button-1 {
+  background-color: transparent;
 }
-
-.logo-image {
-  max-width: 200px;
-  margin-right: 10px;
+.button-2:hover {
+  background-color: rgba(255, 255, 255, 0.178);
 }
-
-.text-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centra horizontalmente el contenido */
+.custom-button:hover {
+  background-color: rgba(255, 255, 255, 0.178);
 }
-
-.text-container h2 {
-  margin-top: 10px;
+.vertical-line {
+  width: 1px;
+  height: 100px;
+  background-color: #a2a4aa;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 @media (max-width: 768px) {
-  .container-a {
-    flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+  .container-main-intro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
-
-  .section-1 {
-    width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
-    height: auto; /* Ajusta la altura automáticamente según el contenido */
-    margin-top: 60px; /* Agrega margen superior para dejar espacio para el menú fijo */
+  .section-img {
+    width: 100%;
   }
-  .Contents-Part-One {
-    width: auto;
+  .section-img img {
+    width: 100%;
+    height: 100%;
   }
-  .section-2 {
-    width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
-    height: auto; /* Ajusta la altura automáticamente según el contenido */
-    margin-top: 0; /* Restablece el margen superior a 0 en pantallas pequeñas */
+  .section-text-intro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-article-intro {
+    width: 100%;
+    margin: 2rem auto;
+  }
+  .logo-container img {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .vertical-line {
+    width: 0;
+    height: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 </style>
