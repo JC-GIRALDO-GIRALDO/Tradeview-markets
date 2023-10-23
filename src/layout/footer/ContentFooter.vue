@@ -105,7 +105,10 @@ const infoBrandsDos = [
         <article class="custom-article-1">
           <div class="contenedor-1">
             <div class="item item-1">
-              <img src="../../../public/logo2.png" alt="logo-gris-empresa" />
+              <img
+                src="https://i.imgur.com/fcF9iSV.png"
+                alt="logo-gris-empresa"
+              />
             </div>
             <div class="item item-2">
               <p>
@@ -141,7 +144,7 @@ const infoBrandsDos = [
             <div class="item item-4 border p-3 d-flex">
               <div class="coment-surf">
                 <div class="content-img-surf">
-                  <img src="../../../public/surf-logo.png" alt="logo-surf" />
+                  <img src="https://i.imgur.com/UsG6h3d.png" alt="logo-surf" />
                 </div>
                 <div class="coment-surf-text">
                   <p>

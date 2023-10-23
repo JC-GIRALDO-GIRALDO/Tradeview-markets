@@ -29,8 +29,11 @@ import TechnologyServices from "./TechnologyServices.vue";
   flex-direction: column;
 }
 @media (max-width: 768px) {
-.ServiceComponents, .TechnologyServices, .CommunityTraders, .ContentFooter {
-  width: 100%;
-}
+  .ServiceComponents,
+  .TechnologyServices,
+  .CommunityTraders,
+  .ContentFooter {
+    width: 100%;
+  }
 }
 </style>

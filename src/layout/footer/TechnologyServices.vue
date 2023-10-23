@@ -12,7 +12,7 @@
     </article>
     <article class="info-Technology">
       <img
-        src="../../../public/image-2.png"
+        src="https://i.imgur.com/nvwji9X.png"
         alt="imagen-tecnologia-computador-celulares"
       />
     </article>
@@ -60,23 +60,23 @@
 }
 @media (max-width: 768px) {
   .container-Technology {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.info-Technology img {
-  width: 100%;
-}
-.text-Technology {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .info-Technology img {
+    width: 100%;
+  }
+  .text-Technology {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-.info-text {
-  width: 100%;
-}
+  .info-text {
+    width: 100%;
+  }
 }
 </style>
