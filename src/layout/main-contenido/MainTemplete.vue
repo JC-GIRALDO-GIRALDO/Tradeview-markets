@@ -124,7 +124,6 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 .button-text {
   color: #a2a4aa;
   margin: 0;

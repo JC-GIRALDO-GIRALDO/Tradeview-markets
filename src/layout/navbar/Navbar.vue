@@ -36,28 +36,24 @@ const toggleMenu = () => {
   text-decoration: none;
   color: #ff0400;
 }
-
 .navbar-list {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
 }
-
 .navbar-item {
   margin-bottom: 1rem;
   margin-top: 1.5rem;
   margin-left: 25px;
   margin-right: 25px;
 }
-
 .navbar-item a {
   color: #f1f1f2;
   text-decoration: none;
   margin-left: 20px;
   margin-right: 20px;
 }
-
 .menu-open {
   display: none;
   flex-direction: column;
@@ -68,7 +64,6 @@ const toggleMenu = () => {
   z-index: 1;
   transition: right 0.3s;
 }
-
 .menu-open li {
   padding: 10px;
 }

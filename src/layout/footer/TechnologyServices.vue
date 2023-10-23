@@ -25,7 +25,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center; /* Centra verticalmente el contenido */
+  align-items: center;
   background-color: #f2f2f2;
 }
 
@@ -74,7 +74,6 @@
     flex-direction: column;
     justify-content: center;
   }
-
   .info-text {
     width: 100%;
   }

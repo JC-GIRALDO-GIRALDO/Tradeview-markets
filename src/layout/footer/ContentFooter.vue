@@ -426,10 +426,10 @@ const infoBrandsDos = [
   text-decoration: none;
 }
 .card {
-  border: none; /* Eliminar bordes de las tarjetas */
-  padding: 10px; /* Agregar espacio (padding) a las tarjetas */
-  background-color: transparent; /* Fondo transparente */
-  color: #a2a4aa; /* Aplicar el color a todo el texto en las tarjetas */
+  border: none;
+  padding: 10px;
+  background-color: transparent;
+  color: #a2a4aa;
   line-height: 1;
 }
 .card-body p {

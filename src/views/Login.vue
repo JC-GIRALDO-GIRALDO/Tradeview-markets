@@ -33,16 +33,13 @@ h2 {
   font-size: 15px;
   cursor: pointer;
 }
-
 .arrow::before {
   content: "▼";
   margin-left: 5px;
 }
-
 .arrow.open::before {
   content: "▲";
 }
-
 .dropdown-menu {
   border: none;
   color: #e3e3e3;
@@ -52,12 +49,10 @@ h2 {
   display: inline;
   position: absolute;
 }
-
 .dropdown-menu li {
   padding: 5px;
   cursor: pointer;
 }
-
 .dropdown-menu a {
   text-decoration: none;
 }
