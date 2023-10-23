@@ -184,9 +184,9 @@ button {
     height: auto; /* Ajusta la altura automáticamente según el contenido */
     margin-top: 60px; /* Agrega margen superior para dejar espacio para el menú fijo */
   }
-.Contents-Part-One {
-  width: auto;
-}
+  .Contents-Part-One {
+    width: auto;
+  }
   .section-2 {
     width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
     height: auto; /* Ajusta la altura automáticamente según el contenido */
