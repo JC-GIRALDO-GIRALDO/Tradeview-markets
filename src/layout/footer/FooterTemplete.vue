@@ -28,6 +28,10 @@ import TechnologyServices from "./TechnologyServices.vue";
   display: flex;
   flex-direction: column;
 }
+.ServiceComponents {
+  margin-top: 55rem;
+  background-color: #ffffff;
+}
 @media (max-width: 768px) {
   .ServiceComponents,
   .TechnologyServices,

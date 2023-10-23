@@ -30,38 +30,33 @@ import Navbar from "./layout/navbar/Navbar.vue";
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1; /* Agrega una capa superior para mantener el encabezado visible */
-  position: relative; /* Establece posición relativa para que los elementos internos puedan ser posicionados con respecto a este */
+  z-index: 0;
+  position: relative;
 }
-
 .content-main-primary {
   width: 100%;
-  margin-top: 100px; /* Ajusta el margen superior para separar el contenido del encabezado */
+  margin-top: 100px;
   height: auto;
-  position: relative;
-  z-index: 1; /* Asegura que el contenido principal esté en la misma capa que el encabezado */
+  position: fixed;
+  z-index: 1;
 }
-
 .text-center {
   background: linear-gradient(#181f29, #181f29, #181f29, #f1f1f200);
   color: #fff;
   padding: 10px 0;
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 2; /* Asegura que el encabezado esté por encima del contenido principal y el pie de página */
 }
-
 .footer {
   width: 100%;
   display: flex;
   flex-direction: column;
-  position: relative; /* Establece la posición en relativa para que el pie de página pase por la mitad de los elementos */
-  z-index: 1; /* Asegura que el pie de página esté en la misma capa que el contenido principal */
+  position: sticky;
+  z-index: 1;
 }
-
-/* Añade margen superior al pie de página para separarlo del contenido principal */
 .footer section {
   margin-top: 20px;
 }

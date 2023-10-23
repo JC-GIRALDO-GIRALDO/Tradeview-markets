@@ -9,171 +9,111 @@ import Tradegatehub from "../../components/Tradegatehub.vue";
 </script>
 
 <template>
-  <header class="header-container">
-    <div class="row align-items-center">
-      <!-- Primera sección - Imagen -->
-      <section class="container-logo col-lg-3 col-md-3 col-sm-6">
-        <article class="content-logo">
-          <img
-            src="https://i.imgur.com/gOY5o9N.png"
-            alt="logo-tvm"
-            class="logo"
-          />
-        </article>
-        <article class="content-name">
-          <div>
-            <h1>
-              <span class="primer-nombre">TRADE</span
-              ><span class="segundo-nombre">VIEW</span>
-            </h1>
-          </div>
-          <div>
-            <h2>MARKETS</h2>
-          </div>
-        </article>
-      </section>
-      <!-- Segunda sección - Lista con clase personalizada -->
-      <section class="container-rutas col-lg-6 col-md-6 col-sm-6">
-        <ul class="nav navigation-menu justify-content-center">
-          <li><Forex /></li>
-          <li><Futures /></li>
-          <li><Stocks /></li>
-          <li><Tradegatehub /></li>
-        </ul>
-      </section>
-      <!-- Tercera sección - H2 con display: flex -->
-      <section
-        class="col-lg-3 col-md-3 col-sm-12 d-flex justify-content-end section"
-      >
+  <div class="container-header">
+    <!-- Primera sección - Imagen -->
+    <section class="container-logo">
+      <article class="content-logo">
+        <img
+          src="https://i.imgur.com/hctQmPu.png"
+          alt="logo-tvm"
+          class="logo"
+        />
+      </article>
+    </section>
+    <!-- Segunda sección - Lista con clase personalizada -->
+    <section class="container-route">
+      <article class="article-route">
+        <h2><Forex /></h2>
+        <h2><Futures /></h2>
+        <h2><Stocks /></h2>
+        <h2><Tradegatehub /></h2>
+      </article>
+    </section>
+    <!-- Tercera sección - H2 con display: flex -->
+    <section class="container-views">
+      <article class="article-views">
         <h2><Login /></h2>
+        <div class="vertical-line"></div>
         <h2><Contacto /></h2>
         <h2><Language /></h2>
-      </section>
-    </div>
-  </header>
+      </article>
+    </section>
+  </div>
 </template>
 
 <style scoped>
-.header-container {
+.container-header {
   width: 100%;
-  color: #f1f1f2;
-  padding: 10px 0;
-}
-
-.container-logo {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: space-evenly;
 }
-.container-rutas {
-  display: flex;
-  flex-direction: initial;
-}
-.primer-nombre {
-  color: #f1f1f2;
-}
-
-.segundo-nombre {
-  color: #ff0400;
-}
-
-.content-name h1 {
-  font-size: 25px;
-}
-
-.content-name h2 {
-  font-size: 15px;
-  margin-top: -10px;
-}
-
 .content-logo img {
-  width: 100px;
-  margin-top: -22px;
+  width: auto;
+  margin: 2rem auto;
 }
-
-.section {
-  flex: 1;
-  padding: 10px;
-}
-
-.section h2 {
-  margin-left: 10px;
-  margin-right: 10px;
-  cursor: pointer;
-}
-
-.logo {
-  max-width: 100%;
-}
-
-.navigation-menu {
-  list-style: none;
+.article-route {
+  width: auto;
+  margin: 2rem auto;
+  margin-right: 20rem;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
-
-.nav-item {
-  margin: 0 10px;
-}
-
-h2 {
-  margin: 0;
-}
-
-.nav li {
+.article-route h2 {
+  cursor: pointer;
   margin-left: 20px;
   margin-right: 20px;
+  font-size: 20px;
+}
+.article-views {
+  width: auto;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.article-views h2 {
   cursor: pointer;
+  margin-left: 8px;
+  margin-right: 8px;
+  font-size: 20px;
 }
-
-/* Ajustes para pantallas pequeñas */
-@media (max-width: 768px) {
-  .col-sm-6 {
-    flex: 1;
-  }
+.vertical-line {
+  width: 1px;
+  height: 20px;
+  background-color: #a2a4aa;
+  margin-left: 5px;
+  margin-right: 5px;
 }
-/* Añade estilos para pantallas pequeñas */
 @media (max-width: 768px) {
-  .header-container {
-    margin: 0 auto;
-    flex-direction: column; /* Cambia la dirección del contenedor principal a columna */
-    align-items: center; /* Centra los elementos en la columna */
-  }
-
-  .container-logo,
-  .container-rutas,
-  .section {
-    margin: 0 auto;
-    width: 100%; /*  estos elementos ocupen el 100% del ancho */
-    text-align: center;
-  }
-
-  .navigation-menu {
-    color: #ff0400;
+  .container-header {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
-
-  .nav li {
-    margin: 5px 0; /* Aumenta el espacio entre los elementos de la lista */
-  }
-}
-/* Ajustes para pantallas pequeñas */
-@media (max-width: 768px) {
   .content-logo img {
     width: auto;
+    margin: 1rem auto;
   }
-
-  .section {
-    width: 100%;
-    padding: 20px;
+  .article-route {
+    width: 95%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
-
-  .section h2 {
+  .article-views {
     width: 100%;
+    margin: 1rem auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+  .vertical-line {
+    width: 1px;
+    height: 15px;
   }
 }
 </style>

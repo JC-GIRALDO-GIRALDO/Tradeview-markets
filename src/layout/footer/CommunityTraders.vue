@@ -54,7 +54,7 @@
   padding: 4rem;
 }
 .border-start {
-  border-left: 1px solid #ffffff; /* Añade una línea vertical en el medio */
+  border-left: 1px solid #ffffff;
 }
 .center-title h3 {
   font-weight: 750;
