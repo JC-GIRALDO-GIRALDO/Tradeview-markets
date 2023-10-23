@@ -80,7 +80,7 @@ const Service = [
 }
 /* Cambiar el color del título a rojo */
 .red-text {
-  color: red;
+  color: #ff0400;
 }
 @media (max-width: 768px) {
   .container {
